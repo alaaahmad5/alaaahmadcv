@@ -419,3 +419,71 @@
 .card4:hover .whatsapp {
   fill: white;
 }
+@media screen and (max-width: 850px){
+  .hero-section{
+    width: 100vw;
+    height: 50vh;
+  }
+  .left-helf{
+    width: 40%;
+  }
+  .left-helf-text h1{
+    font-size: 2.5rem;
+  }
+  .right-helf{
+    width: 60%;
+  }
+  .right-helf img {
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .right-helf ul li a {
+    font-size: 0.6rem;
+    padding: 4px;
+  }
+  /* space */
+  .space{
+    height: 100px;
+  }
+  .space p {
+    font-size: 0.6rem;
+  }
+  /* project-section */
+  .project-section-title{
+font-size: 1.3rem;
+  }
+
+  .project-section-card{
+    width: 350px;
+    height: 200px;
+    margin: 20px 0;
+  }
+  .first-screen{
+    width: 100%;
+    height: 100%;
+  }
+  .second-screen{
+    width: 100%;
+    height: 100%;
+    top: -200px;
+  }
+  /* skill section */
+  .skill-section-title h1 {
+    font-size: 1.6rem;
+  }
+  .skill-section-title p {
+    font-size: 0.7rem;
+  }
+  .skill-section-con{
+    margin-top: 50px;
+  }
+  /* .head-logo{
+    width: 60px;
+    height: 60px;
+  } */
+  .skill-section-card{
+    width: 350px;
+    height: 200px;
+  }
+}
