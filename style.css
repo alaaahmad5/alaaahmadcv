@@ -644,4 +644,19 @@ font-size: 1.3rem;
     width: 350px;
     height: 200px;
   }
+  .space-2{
+    font-size: 0.5rem;
+  }
+  .right-helf ul {
+    gap: 50px;
+  }
+  .client-section div img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .client-section div img:nth-last-of-type(1){
+    width: 40px;
+    height: 40px;
+  }
 }
