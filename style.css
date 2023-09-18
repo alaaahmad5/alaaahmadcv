@@ -38,37 +38,42 @@
 .right-helf {
   width: 50%;
   height: 100%;
-  background-color: #025aa2;
-}
-.right-helf img {
-  width: 100%;
-  height: 85vh;
-}
-.right-helf ul {
-  width: 100%;
+  background-color: #ffcc00;
   display: flex;
-  justify-content: space-around;
-  gap: 10;
-  list-style: none;
-  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
 }
+
 .list{
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+}
+.right-helf ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  gap: 100px;
+  list-style: none;
+}
+.right-helf ul li {
+list-style: none;
+
 }
 .right-helf ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  transition-duration: 300ms;
-  padding: 10px;
+color: #0058ab;
+ text-decoration: none;
+ font-size: 1.2rem;
+ font-weight: 600;
+ text-transform: capitalize;
+ transition-duration: 300ms;
 }
 .right-helf ul li a:hover{
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #0058ab;
   padding: 5px;
 }
 /* project section */
@@ -169,8 +174,42 @@
 .project-section-card:hover .second-screen {
   opacity: 0;
 }
-
+.project-section-card-btn{
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  cursor:pointer;
+  background-color: #0058ab;
+  color: #fff;
+  transition-duration: 500ms;
+  z-index: 0;
+}
+.project-section-card-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.project-section-card-btn:hover{
+  background-color: #ffcc00;
+}
+.project-section-card:hover .project-section-card-btn{
+  z-index: 1;
+}
 /* space */
+.space-2 div{
+  background-color: aliceblue;
+  width: 100vw;
+  height: 200px;
+  border-top: #141414 2px solid;
+  border-bottom: #141414 2px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  color: gray;
+  
+}
+
 .space {
   background-color: aliceblue;
   width: 100vw;
@@ -188,6 +227,36 @@
   padding: 0 0 1%;
   font-weight: 600;
   font-size: 0.95rem;
+}
+/* client section */
+.client-section{
+  padding: 50px;
+  text-transform: capitalize;
+  border-bottom: 0.5px solid #191919;
+}
+.client-section h1 {
+
+}
+.client-section div{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 50px;
+}
+.client-section div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.client-section div img:nth-last-of-type(1){
+  width: 100px;
+  height: 100px;
+  border: 1px solid #191919;
+}
+.client-section div img:hover{
+  transform: scale(110%);
 }
 
 /* skill section */
@@ -419,6 +488,95 @@
 .card4:hover .whatsapp {
   fill: white;
 }
+/* about me section */
+.aboutme-section{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10%;
+background-color: #ffcc00;
+}
+.code-editor {
+  width: 60vw;
+  height:100% ;
+  background-color: #1d1e22;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.title {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.57px;
+  color: rgb(212 212 212);
+}
+
+.icon {
+  width: 20px;
+  transition: .2s ease;
+}
+
+.icon:hover {
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #6e7281;
+}
+
+.editor-content {
+  margin: 0 10px 10px;
+  color: white;
+}
+
+.property {
+  margin-left: 30px;
+}
+
+.property:hover {
+  cursor: text;
+}
+
+.editor-content .color-0 {
+  color: rgb(86 156 214);
+}
+
+.editor-content .color-1 {
+  color: rgb(182 206 168);
+}
+
+.editor-content .color-2 {
+  color: rgb(156 220 254);
+}
+
+.editor-content .color-3 {
+  color: rgb(207 146 120);
+}
+
+.color-preview-1,.color-preview-2 {
+  height: 8px;
+  width: 8px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.color-preview-1 {
+  background-color: #1d1e22;
+}
+
+.color-preview-1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 @media screen and (max-width: 850px){
   .hero-section{
     width: 100vw;
